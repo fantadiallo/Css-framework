@@ -1,0 +1,20 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore environment files
+.env
+
+# Ignore compiled CSS files (if using SASS/SCSS)
+dist/css/
+
+# Ignore build output
+dist/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Sass cache files
+.sass-cache/
+
+# Ignore log files
+*.log

@@ -1,0 +1,27 @@
+{
+  "name": "css-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server dist",
+    "start": "npm run build && npm run watch",
+    "clean": "rm -rf dist",
+    "lint": "eslint src/js",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.14.0",
+    "gh-pages": "^6.2.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.80.6"
+  }
+}
