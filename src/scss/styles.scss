@@ -1,6 +1,9 @@
-// Import Variables
-@import 'variables/colors';
-@import 'variables/spacing';
+// Import Custom Variables First
+@use 'variables/colors';
+@use 'variables/spacing';
+
+// Import Bootstrap SCSS
+@use "../../node_modules/bootstrap/scss/bootstrap" as *;
 
 // Import Layout
 @import 'layout/header';
@@ -11,7 +14,6 @@
 @import 'components/form';
 @import 'components/button';
 @import 'components/card';
-@import 'components/modal';
 
 // Import Pages
 @import 'pages/auth';
