@@ -1,0 +1,22 @@
+@use '../variables/colors';
+@use '../variables/spacing';
+
+.profile-page {
+  background-color: colors.$dark-bg;
+  color: colors.$text-light;
+  padding: spacing.$space-lg;
+
+  .profile-header {
+    color: colors.$primary-color;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: spacing.$space-md;
+  }
+
+  .profile-info {
+    background-color: colors.$card-bg;
+    padding: spacing.$space-md;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+}

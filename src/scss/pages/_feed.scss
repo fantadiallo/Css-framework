@@ -1,0 +1,23 @@
+@use '../variables/colors';
+@use '../variables/spacing';
+
+.feed-page {
+  background-color: colors.$dark-bg;
+  color: colors.$text-light;
+  padding: spacing.$space-md;
+
+  .feed-header {
+    color: colors.$primary-color;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: spacing.$space-sm;
+  }
+
+  .feed-item {
+    background-color: colors.$card-bg;
+    border-radius: 8px;
+    margin-bottom: spacing.$space-sm;
+    padding: spacing.$space-md;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+}

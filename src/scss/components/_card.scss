@@ -1,0 +1,16 @@
+@use '../variables/colors';
+
+.card {
+  background-color: colors.$card-bg;
+  border: 1px solid colors.$border-color;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
+  .card-body {
+    color: colors.$text-light;
+  }
+
+  .card-title {
+    color: colors.$primary-color;
+  }
+}

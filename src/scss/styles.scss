@@ -1,21 +1,14 @@
-// Import Custom Variables First
-@use 'variables/colors';
+// src/scss/styles.scss
+
+@use 'variables/colors';  // Ensure this is first
 @use 'variables/spacing';
-
-// Import Bootstrap SCSS
+@use 'layout/header';  // Then import the layout files
+@use 'layout/footer';
+@use 'layout/main';
+@use 'components/form';
+@use 'components/button';
+@use 'components/card';
+@use 'pages/auth';
+@use 'pages/feed';
+@use 'pages/profile';
 @use "../../node_modules/bootstrap/scss/bootstrap" as *;
-
-// Import Layout
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/main';
-
-// Import Components
-@import 'components/form';
-@import 'components/button';
-@import 'components/card';
-
-// Import Pages
-@import 'pages/auth';
-@import 'pages/feed';
-@import 'pages/profile';

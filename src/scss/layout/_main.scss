@@ -1,0 +1,12 @@
+@use '../variables/colors';
+@use '../variables/spacing';
+
+main {
+  background: colors.$gradient-dark;
+  color: colors.$text-light;
+  padding: spacing.$space-lg;
+
+  .content-wrapper {
+    margin-top: spacing.$space-md;
+  }
+}

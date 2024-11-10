@@ -1,0 +1,19 @@
+@use '../variables/colors';
+
+.btn-primary {
+  background-color: colors.$primary-color;
+  color: colors.$text-light;
+  border: none;
+  &:hover {
+    background-color: colors.$hover-color;
+  }
+}
+
+.btn-secondary {
+  background-color: colors.$secondary-color;
+  color: colors.$text-light;
+  border: none;
+  &:hover {
+    background-color: darken(colors.$secondary-color, 10%);
+  }
+}

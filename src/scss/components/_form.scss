@@ -1,0 +1,38 @@
+@use '../variables/colors';
+@use '../variables/spacing';
+
+form {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: spacing.$space-md;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+  .form-label {
+    color: colors.$text-light;
+  }
+
+  .form-control {
+    background-color: colors.$dark-accent;
+    border: 1px solid colors.$border-color;
+    color: colors.$text-light;
+
+    &:focus {
+      background-color: colors.$card-bg;
+      border-color: colors.$primary-color;
+    }
+  }
+
+  .form-check-label {
+    color: colors.$text-light;
+  }
+
+  .btn {
+    background-color: colors.$primary-color;
+    color: colors.$text-light;
+    border: none;
+
+    &:hover {
+      background-color: colors.$hover-color;
+    }
+  }
+}
