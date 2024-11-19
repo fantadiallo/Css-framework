@@ -12,7 +12,13 @@
     "lint": "eslint src/js",
     "deploy": "npm run build && gh-pages -d dist"
   },
-  "keywords": ["css", "framework", "sass", "bootstrap", "social-media"],
+  "keywords": [
+    "css",
+    "framework",
+    "sass",
+    "bootstrap",
+    "social-media"
+  ],
   "author": "fantadiallo",
   "license": "ISC",
   "dependencies": {
