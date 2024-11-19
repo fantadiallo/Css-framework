@@ -1,7 +1,7 @@
 {
   "name": "css-framework",
   "version": "1.0.0",
-  "description": "",
+  "description": "CSS framework and project setup for social media app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,10 +10,10 @@
     "start": "npm run build && npm run watch",
     "clean": "rm -rf dist",
     "lint": "eslint src/js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["css", "framework", "sass", "bootstrap", "social-media"],
+  "author": "fantadiallo",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.3"
