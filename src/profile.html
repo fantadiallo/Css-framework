@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Social Media App</title>
+    <meta name="description" content="View your profile, posts, and connect with friends on our social media app.">
+    <meta name="keywords" content="profile, social media, posts, friends, online community">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" defer></script>
+</head>
+<body class="profile-page">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./profile.html">SocialApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./feed.html">Feed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">LogIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light" id="theme-toggle-btn" aria-label="Toggle Theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container py-3">
+    
+        <div class="profile-header mb-3 text-center">
+            <h1>Welcome to Your Profile</h1>
+            <p>Update your details, share your thoughts, and connect with your community!</p>
+        </div>
+
+        <div class="row">
+       
+            <div class="col-md-8">
+                <div class="profile-info mb-3 p-3 border rounded">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="/src/svg/deer-3275594_1280.jpg" class="rounded-circle img-fluid" alt="Profile Picture" style="max-width: 120px;">
+                            <h3 class="mt-2">John Doe</h3>
+                            <p>@johndoe</p>
+                            <button class="btn btn-primary" id="follow-btn" aria-label="Follow John Doe">Follow</button>
+                        </div>
+                        <div class="col-md-8">
+                            <h4>About Me</h4>
+                            <p>Hi, I'm John! A software developer passionate about creating amazing user experiences. When I'm not coding, you’ll find me hiking or reading a good book. Feel free to connect with me!</p>
+                            <div class="mt-3">
+                                <p><strong>Followers:</strong> <a href="/followers.html">320</a></p>
+                                <p><strong>Following:</strong> <a href="/following.html">180</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="create-post-section mb-3 p-3 border rounded">
+                    <h4>Create a New Post</h4>
+                    <form id="create-post-form">
+                        <div class="mb-2">
+                            <label for="post-content" class="form-label">Post Content</label>
+                            <textarea class="form-control" id="post-content" rows="2" placeholder="What's on your mind?" required></textarea>
+                        </div>
+                        <div class="mb-2">
+                            <label for="post-thumbnail" class="form-label">Post Thumbnail</label>
+                            <input type="file" class="form-control" id="post-thumbnail" accept="image/*" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Post</button>
+                    </form>
+                </div>
+            </div>
+
+          
+            <div class="col-md-4">
+                <div class="online-friends mb-3 p-3 border rounded">
+                    <h4>Online Friends</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="online-indicator bg-success rounded-circle me-2" style="width: 10px; height: 10px;" aria-label="Online"></span>
+                            Mia
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="online-indicator bg-success rounded-circle me-2" style="width: 10px; height: 10px;" aria-label="Online"></span>
+                            Frida
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="online-indicator bg-secondary rounded-circle me-2" style="width: 10px; height: 10px;" aria-label="Offline"></span>
+                            Lucas <small class="ms-auto text-muted">Offline</small>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="online-indicator bg-secondary rounded-circle me-2" style="width: 10px; height: 10px;" aria-label="Offline"></span>
+                            Emma <small class="ms-auto text-muted">Offline</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+  
+        <div class="container posts-section">
+            <h5>My Posts</h5>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/src/svg/teeth-8770514_1280.jpg" class="card-img-top" alt="Post Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 1</h5>
+                            <p class="card-text">Description for card 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/src/svg/boho-art-7289600_1280.jpg" class="card-img-top" alt="Post Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 2</h5>
+                            <p class="card-text">Description for card 2.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center my-3">
+                <p class="text-muted">You haven’t posted anything yet.</p>
+            </div>
+
+            <div class="text-center my-4">
+                <button type="button" class="btn btn-primary">View More</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer text-center bg-dark text-white py-2">
+    <p>&copy; 2024 SocialApp. All rights reserved.</p>
+</footer>
+
+<script src="../js/main.js" defer></script>
+</body>
+</html>
