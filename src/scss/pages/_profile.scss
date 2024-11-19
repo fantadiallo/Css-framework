@@ -6,6 +6,8 @@
   color: colors.$text-light;
   padding: spacing.$space-lg;
 
+  margin: 0 auto; 
+  
   .profile-header {
     color: colors.$primary-color;
     font-size: 2rem;
@@ -18,5 +20,43 @@
     padding: spacing.$space-md;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-height: 450px; 
+    overflow: hidden; 
+    padding-bottom: spacing.$space-sm; 
+  }
+
+  /* Create Post Section */
+  .create-post-box {
+    background-color: colors.$card-bg;
+    padding: spacing.$space-md;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Carousel */
+  #my-posts-carousel {
+    max-width: 600px;
+    height: 200px; 
+  }
+
+  .carousel-item img {
+    object-fit: cover; 
+    height: 100%; 
+    width: 100%; 
+  }
+
+
+  .online-friends-box {
+    background-color: colors.$card-bg;
+    padding: spacing.$space-md;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    min-height: 300px; 
+  }
+
+
+  .create-post-box, .online-friends-box {
+    min-height: 300px; 
   }
 }
+

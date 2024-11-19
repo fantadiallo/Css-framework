@@ -1,12 +1,21 @@
 @use '../variables/colors';
 @use '../variables/spacing';
 
-main {
-  background: colors.$gradient-dark;
-  color: colors.$text-light;
-  padding: spacing.$space-lg;
-
-  .content-wrapper {
-    margin-top: spacing.$space-md;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
+
+.main-content {
+    background-color: colors.$dark-bg;
+    color: colors.$text-light;
+    padding: spacing.$space-lg;
+    
+    .section-title {
+        color: colors.$primary-color;
+        font-weight: bold;
+    }
+}
+

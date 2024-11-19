@@ -1,8 +1,8 @@
 // src/scss/styles.scss
 
-@use 'variables/colors';  // Ensure this is first
+@use 'variables/colors';  
 @use 'variables/spacing';
-@use 'layout/header';  // Then import the layout files
+@use 'layout/header';  
 @use 'layout/footer';
 @use 'layout/main';
 @use 'components/form';

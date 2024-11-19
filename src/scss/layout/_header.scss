@@ -1,31 +1,18 @@
 @use '../variables/colors';
-@use '../variables/spacing';
 
-header {
-  background-color: colors.$dark-bg;
-  padding: spacing.$space-sm 0;
-
-  .navbar {
+.header {
     background-color: colors.$dark-accent;
-    padding: spacing.$space-xs spacing.$space-sm;
-
+    
     .navbar-brand {
-      color: colors.$text-light;
-      font-size: 1.8rem;
-      font-weight: bold;
-
-      &:hover {
         color: colors.$primary-color;
-      }
     }
-
-    .navbar-nav .nav-link {
-      color: colors.$text-light;
-
-      &:hover {
-        color: colors.$hover-color;
-      }
+    
+    .nav-link {
+        color: colors.$primary-color;
+        
+        &:hover {
+            color: colors.$primary-color;
+        }
     }
-  }
 }
 

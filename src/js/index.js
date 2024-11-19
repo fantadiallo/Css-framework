@@ -6,7 +6,7 @@ export default async function router(pathname = window.location.pathname) {
             await import("./views/auth.js");
             break;
         case "/feed":
-            await import("./views/feed.js");
+            await import("../../feed.js");
             break;
         case "/profile":
             await import("./views/profile.js");

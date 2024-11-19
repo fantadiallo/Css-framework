@@ -1,5 +1,33 @@
 @use "../variables/colors";
 
-footer {
-  background-color: colors.$dark-accent; 
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.footer {
+  background-color: colors.$dark-accent;
+  text-align: center;
+  padding: 1rem;
+  color: colors.$text-light;
+  margin-top: auto;
+
+  a {
+    color: colors.$primary-color;
+    text-decoration: none;
+
+    &:hover {
+      color: colors.$secondary-color;
+    }
+  }
 }

@@ -4,11 +4,17 @@
 .feed-page {
   background-color: colors.$dark-bg;
   color: colors.$text-light;
-  padding: spacing.$space-md;
+  padding: spacing.$space-lg;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 
   .feed-header {
     color: colors.$primary-color;
-    font-size: 1.8rem;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: spacing.$space-sm;
   }
@@ -19,5 +25,77 @@
     margin-bottom: spacing.$space-sm;
     padding: spacing.$space-md;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+
+    .card-inner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .card-body,
+    .card-img-top {
+      backface-visibility: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .card-img-top {
+      object-fit: cover;
+      display: block;
+      object-position: center;
+      top: 0;
+      left: 0;
+    }
+
+    .card-body {
+      background-color: colors.$card-bg;
+      padding: spacing.$space-sm;
+      color: colors.$text-light;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      opacity: 0;
+      transform: rotateY(180deg);
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .card-title {
+      font-size: 1rem;
+    }
+
+    .card-text {
+      font-size: 0.875rem;
+      line-height: 1.4;
+    }
+
+    .btn {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+    }
+
+    &:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    &:hover .card-body {
+      opacity: 1;
+    }
+  }
+
+  .carousel-inner {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
