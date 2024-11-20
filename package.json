@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-   "build": "sass src/scss:dist/css && cp -R src/* dist",
-"watch": "sass --watch src/scss:dist/css & live-server dist",
+    "build": "sass src/scss:dist/css && cp -R src/* dist",
+    "watch": "sass --watch src/scss:dist/css & live-server dist",
     "start": "npm run build && npm run watch",
     "clean": "rm -rf dist",
     "lint": "eslint src/js",
-    "deploy": "npm run build && gh-pages -d dist" 
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [
     "css",
